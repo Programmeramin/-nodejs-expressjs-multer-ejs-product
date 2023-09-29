@@ -4,10 +4,12 @@
       <a href="/create" class="btn btn-sm btn-primary mb-3">Add new product</a>
       <div class="card">
         <div class="card-body">
-          <img class="w-100" src="/product/<%= product.photo %>" alt="" />
+          <img class="w-100 mb-3" src="/product/<%= product.photo %>" alt="" />
 
-          <h1><%= product.name %></h1>
-          <h1><%= product.regularPrice %></h1>
+          <h1>Product Name :<%= product.name %></h1>
+          <h1>Regular Price :<%= product.regularPrice %></h1>
+          <h1>Sale Price :<%= product.salePrice %></h1>
+          <h1>Stock :<%= product.stock %></h1>
         </div>
       </div>
     </div>
