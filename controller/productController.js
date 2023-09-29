@@ -109,7 +109,7 @@ export const showcreateProductPage = (req, res) =>{
 }
 
 
-//shwot single product page
+//shwo single product page
 export const  showsingleProductPage = (req, res) =>{
 
     const {slug} = req.params;

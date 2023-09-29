@@ -1,47 +1,78 @@
- 
-
-    <div class="container">
-        <div class="row justify-content-center my-5">
-            <div class="col-md-6">
-                <a href="/" class="btn btn-sm btn-primary mb-3">Back</a>
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Update Prouduct</h2>
-                    </div>
-                    <div class="card-body"></div>
-
-                    <form action="/update/<%= product.id %>" enctype="multipart/form-data" method="post">
-                        <div class="my-3">
-                            <label for="">Prouduct Name</label>
-                            <input class="form-control" type="text" name="name" value="<%= product.name %>"/>
-                        </div>
-
-                        <div class="my-3">
-                            <label for="">Regulare Price</label>
-                            <input class="form-control" type="text" name="regularPrice" value="<%= product.regularPrice %>"/>
-                        </div>
-
-                        <div class="my-3">
-                            <label for="">Sale Price</label>
-                            <input class="form-control" type="text" name="salePrice" value="<%= product.salePrice %>"/>
-                        </div>
-
-                        <div class="my-3">
-                            <label for="">Stock</label>
-                            <input class="form-control" type="text" name="stock" value="<%= product.stock %>"/>
-                        </div>
-
-                        <div class="my-3">
-                            <label for="">Prouduct Name</label>
-                             <img class="w-100" src="/product/<%= product.photo %>" alt="">
-                        </div>
-
-                        <div class="my-3">
-                          <button type="submit" class="btn btn-primary">Create</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
+<div class="container">
+  <div class="row justify-content-center my-5">
+    <div class="col-md-6">
+      <a href="/" class="btn btn-sm btn-primary mb-3">Back</a>
+      <div class="card">
+        <div class="card-header">
+          <h2>Update Prouduct</h2>
         </div>
+        <div class="card-body"></div>
+
+        <form
+          action="/update/<%= product.id %>"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <div class="my-3">
+            <label for="">Prouduct Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              value="<%= product.name %>"
+            />
+          </div>
+
+          <div class="my-3">
+            <label for="">Regulare Price</label>
+            <input
+              class="form-control"
+              type="text"
+              name="regularPrice"
+              value="<%= product.regularPrice %>"
+            />
+          </div>
+
+          <div class="my-3">
+            <label for="">Sale Price</label>
+            <input
+              class="form-control"
+              type="text"
+              name="salePrice"
+              value="<%= product.salePrice %>"
+            />
+          </div>
+
+          <div class="my-3">
+            <label for="">Stock</label>
+            <input
+              class="form-control"
+              type="text"
+              name="stock"
+              value="<%= product.stock %>"
+            />
+          </div>
+
+          <div class="my-3">
+            <label for="">Prouduct Name</label>
+            <img class="w-100 mb-3" src="/product/<%= product.photo %>" alt="" />
+
+            <p style="color: #ff7b00; background-color: black; width: 320px; margin-left: 5px; padding: 10px; border-radius: 20px;">If you want to change photo? Click Choose File then Upload Photo</p>
+
+            <input
+            class="userPhoto"
+            type="file"
+            class="form-control"
+            name="productPhoto"/>
+
+
+          </div>
+
+          <div class="my-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+</div>
